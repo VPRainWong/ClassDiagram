@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.classdiagram"
+		name="Create Class Diagram"
+		description="Create Class Diagram via Open API"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.classdiagram.ClassDiagramPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.classdiagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.classdiagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.classdiagram.actionset1.ClassDiagramActionControl"
+					actionType="generalAction"
+					label="Create Class Diagram"
+					tooltip="Create Class Diagram via Open API"
+					style="normal"
+					icon="icons/class.png"
+					toolbarPath="com.vp.plugin.sample.classdiagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.classdiagram.actions.ClassDiagramActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
